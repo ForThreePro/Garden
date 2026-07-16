@@ -3,199 +3,217 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>THE GARDEN OF SAKURA 🌸💖</title>
+<title>THE GARDEN OF SAKURA 🌸</title>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@400;600;700&display=swap');
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
-  background: linear-gradient(135deg, #1a0015 0%, #330026 50%, #1a0015 100%);
-  color: #fff;
-  font-family: 'Poppins', sans-serif;
-  overflow-x: hidden;
+  background: #FFF0F7;
   background-image: 
-    radial-gradient(circle at 20% 50%, rgba(255,142,207,0.2) 0%, transparent 50%),
-    radial-gradient(circle at 80% 80%, rgba(255,182,230,0.15) 0%, transparent 50%);
+    radial-gradient(circle at 25% 20%, rgba(255,192,229,0.4) 0%, transparent 40%),
+    radial-gradient(circle at 80% 70%, rgba(255,214,240,0.3) 0%, transparent 50%);
+  color: #5A3E4C;
+  font-family: 'Quicksand', sans-serif;
+  overflow-x: hidden;
 }
 
-/* HEADER */
+/* HEADER SUAVE */
 header {
   text-align: center;
-  padding: 100px 20px 60px;
+  padding: 120px 20px 80px;
   position: relative;
 }
 
 .logo {
-  font-family: 'Dancing Script', cursive;
-  font-size: 4.5rem;
-  background: linear-gradient(180deg, #FFB6E6 0%, #FF8ECF 40%, #FF69B4 70%, #E85CA5 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 0 0 40px rgba(255,142,207,0.7);
-  animation: glow 2s ease-in-out infinite alternate;
+  font-family: 'Great Vibes', cursive;
+  font-size: 5rem;
+  color: #E85CA5;
+  text-shadow: 0 3px 15px rgba(232,92,165,0.2);
+  letter-spacing: 3px;
+  animation: float 3s ease-in-out infinite;
 }
 
-@keyframes glow {
-  from { filter: drop-shadow(0 0 15px #FF69B4); }
-  to { filter: drop-shadow(0 0 40px #FF8ECF); }
+@keyframes float {
+ 0%, 100% { transform: translateY(0px); }
+ 50% { transform: translateY(-10px); }
 }
 
 .desc {
-  max-width: 700px;
-  margin: 30px auto;
-  font-size: 1.2rem;
-  line-height: 1.9;
-  color: #FFD6F0;
+  max-width: 650px;
+  margin: 35px auto;
+  font-size: 1.15rem;
+  line-height: 2;
+  color: #8A6A7A;
   font-weight: 400;
 }
 
-/* PETALOS ROSAS */
-.sakura { position: fixed; top: -10%; color: #FFB6E6; animation: fall 10s linear infinite; z-index: -1; text-shadow: 0 0 10px #FF69B4; }
-@keyframes fall { to { transform: translateY(110vh) rotate(360deg); opacity: 0; } }
+/* PETALOS DELICADOS */
+.sakura { 
+  position: fixed; 
+  top: -10%; 
+  color: #FFC0E5; 
+  animation: fall 12s linear infinite; 
+  z-index: -1; 
+  opacity: 0.7;
+  filter: blur(0.5px);
+}
+@keyframes fall { 
+  to { transform: translateY(110vh) rotate(720deg); opacity: 0; } 
+}
 
-/* BOTON ROSA */
+/* BOTON DELICADO */
 .btn {
   display: inline-block;
-  padding: 18px 50px;
-  background: linear-gradient(90deg, #FF69B4, #FF8ECF, #FFB6E6);
-  color: #1a0015;
+  padding: 16px 45px;
+  background: #FFFFFF;
+  color: #E85CA5;
   text-decoration: none;
-  border-radius: 50px;
-  font-weight: 700;
+  border-radius: 100px;
+  font-weight: 600;
   margin: 10px;
-  transition: 0.3s;
-  box-shadow: 0 8px 25px rgba(255,105,180,0.5);
-  font-size: 1.1rem;
-  border: 2px solid #FFB6E6;
+  transition: all 0.4s ease;
+  border: 2px solid #FFC0E5;
+  box-shadow: 0 8px 20px rgba(232,92,165,0.15);
+  letter-spacing: 1px;
 }
-.btn:hover { transform: scale(1.1); box-shadow: 0 15px 50px rgba(255,105,180,0.8); }
+.btn:hover { 
+  background: #FFC0E5;
+  color: #FFFFFF;
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(232,92,165,0.3);
+}
 
-.container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
+.container { max-width: 900px; margin: 0 auto; padding: 50px 20px; }
 
-/* CARDS ROSAS */
+/* CARDS BLANCAS DELICADAS */
 .card {
-  background: linear-gradient(135deg, rgba(255,105,180,0.1), rgba(255,182,230,0.08));
-  border: 2px solid rgba(255,142,207,0.4);
-  border-radius: 30px;
-  padding: 45px;
-  margin: 30px 0;
-  backdrop-filter: blur(15px);
+  background: rgba(255,255,255,0.8);
+  border: 1px solid rgba(255,192,229,0.5);
+  border-radius: 35px;
+  padding: 50px;
+  margin: 40px 0;
+  backdrop-filter: blur(10px);
   transition: 0.4s;
   text-align: center;
-  box-shadow: 0 10px 30px rgba(255,105,180,0.2);
+  box-shadow: 0 15px 40px rgba(232,92,165,0.1);
 }
 .card:hover { 
-  border-color: #FF69B4; 
-  box-shadow: 0 0 40px rgba(255,105,180,0.5); 
-  transform: translateY(-8px);
+  transform: translateY(-10px);
+  box-shadow: 0 25px 50px rgba(232,92,165,0.2);
+}
+
+.titulo-seccion {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.8rem;
+  color: #E85CA5;
+  margin-bottom: 25px;
 }
 
 .lider-nombre {
-  font-size: 2.5rem;
-  background: linear-gradient(90deg, #FF69B4, #FF8ECF);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-bottom: 10px;
+  font-size: 2.2rem;
+  color: #E85CA5;
+  margin-bottom: 8px;
   font-weight: 700;
-  font-family: 'Dancing Script', cursive;
+  letter-spacing: 2px;
 }
 .lider-cargo {
-  color: #FFB6E6;
-  font-size: 1.2rem;
-  margin-bottom: 25px;
+  color: #B58A9D;
+  font-size: 1.1rem;
+  margin-bottom: 30px;
   font-style: italic;
 }
 
-/* BOTONES SOCIALES ROSAS */
+/* BOTONES SOCIALES SUAVES */
 .socials a {
   display: inline-block;
-  margin: 10px 15px;
-  padding: 14px 30px;
-  background: linear-gradient(90deg, rgba(255,105,180,0.2), rgba(255,182,230,0.2));
-  border: 2px solid #FF69B4;
-  border-radius: 20px;
-  color: #FFD6F0;
+  margin: 12px 18px;
+  padding: 14px 32px;
+  background: #FFFFFF;
+  border: 1.5px solid #FFC0E5;
+  border-radius: 100px;
+  color: #E85CA5;
   text-decoration: none;
-  transition: 0.3s;
+  transition: all 0.3s ease;
   font-weight: 600;
-  box-shadow: 0 5px 15px rgba(255,105,180,0.3);
+  box-shadow: 0 5px 15px rgba(232,92,165,0.1);
 }
 .socials a:hover { 
-  background: linear-gradient(90deg, #FF69B4, #FF8ECF); 
-  color: #1a0015; 
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(255,105,180,0.6);
+  background: #E85CA5; 
+  color: #FFFFFF; 
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(232,92,165,0.25);
 }
 
 footer {
   text-align: center;
-  padding: 40px 20px;
-  border-top: 2px solid rgba(255,142,207,0.3);
-  color: #FFB6E6;
-  background: rgba(255,105,180,0.05);
+  padding: 50px 20px;
+  color: #B58A9D;
+  font-size: 0.95rem;
 }
 
-.sparkle::before {
-  content: '✨';
-  margin: 0 10px;
-  color: #FFB6E6;
+.divider {
+  width: 100px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #FFC0E5, transparent);
+  margin: 25px auto;
 }
 </style>
 </head>
 <body>
 
 <script>
-for(let i=0; i<25; i++){
+for(let i=0; i<18; i++){
   let sakura = document.createElement('div');
   sakura.className = 'sakura';
   sakura.innerHTML = '🌸';
   sakura.style.left = Math.random()*100 + '%';
-  sakura.style.animationDelay = Math.random()*5 + 's';
-  sakura.style.fontSize = Math.random()*25 + 15 + 'px';
+  sakura.style.animationDelay = Math.random()*8 + 's';
+  sakura.style.fontSize = Math.random()*18 + 12 + 'px';
   document.body.appendChild(sakura);
 }
 </script>
 
 <header>
-  <h1 class="logo">THE GARDEN OF SAKURA</h1>
+  <h1 class="logo">The Garden of Sakura</h1>
+  <div class="divider"></div>
   <p class="desc">
-    <span class="sparkle"></span>
     Más que un grupo, somos un jardín en constante florecimiento, 
     donde la amistad, el respeto y la alegría nos unen. 
-    Bienvenida a <b>THE GARDEN OF SAKURA</b>, un lugar donde cada flor 
-    tiene su propio brillo y juntas creamos un paisaje inolvidable. 
-    <span class="sparkle"></span>🌸
+    Bienvenida a <b>The Garden of Sakura</b>, un lugar donde cada flor 
+    tiene su propio brillo y juntas creamos un paisaje inolvidable. 🌸
   </p>
   <div>
-    <a href="https://chat.whatsapp.com/HT0YyZbLEj2LWOgIhwoP72?s=cl&p=a&ilr=0" target="_blank" class="btn">💖 Unirme al Jardín</a>
+    <a href="https://chat.whatsapp.com/HT0YyZbLEj2LWOgIhwoP72?s=cl&p=a&ilr=0" target="_blank" class="btn">Unirme al Jardín</a>
   </div>
 </header>
 
 <div class="container">
   
   <div class="card">
-    <h2 style="background: linear-gradient(90deg, #FF69B4, #FF8ECF); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom:20px; font-size:2.2rem;">👑 LIDER DEL CLAN 👑</h2>
+    <h2 class="titulo-seccion">Líder del Clan</h2>
     <div class="lider-nombre">SAKURITA</div>
-    <div class="lider-cargo">— Encargada principal del clan —</div>
+    <div class="lider-cargo">Encargada principal del clan</div>
+    <div class="divider"></div>
     <div class="socials">
-      <a href="https://www.tiktok.com/@ikio_16?_r=1&_t=ZS-984FBnojtou" target="_blank">📱 TikTok</a>
-      <a href="https://www.instagram.com/pinklove_pp?igsh=dXBvaWk0OWIzeTFn&utm_source=qr" target="_blank">📸 Instagram</a>
+      <a href="https://www.tiktok.com/@ikio_16?_r=1&_t=ZS-984FBnojtou" target="_blank">TikTok</a>
+      <a href="https://www.instagram.com/pinklove_pp?igsh=dXBvaWk0OWIzeTFn&utm_source=qr" target="_blank">Instagram</a>
     </div>
   </div>
 
   <div class="card">
-    <h2 style="background: linear-gradient(90deg, #FF69B4, #FF8ECF); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom:20px; font-size:2rem;">✨ Nuestros Valores ✨</h2>
-    <p style="font-size:1.2rem; color:#FFD6F0;">
-      🌸 <b>Amistad</b> | 💖 <b>Respeto</b> | 😊 <b>Alegría</b><br><br>
-      Juntas hacemos florecer este jardín mágico
+    <h2 class="titulo-seccion">Nuestros Valores</h2>
+    <p style="font-size:1.15rem; color:#8A6A7A; line-height:2;">
+      🌸 <b>Amistad</b> · 💖 <b>Respeto</b> · 😊 <b>Alegría</b><br><br>
+      Cada una de nosotras es una flor única que hace más hermoso este jardín
     </p>
   </div>
 
 </div>
 
 <footer>
-  <p>© 2026 THE GARDEN OF SAKURA | Hecho con amor y mucho rosa 💗🌸</p>
+  <p>© 2026 The Garden of Sakura · Hecho con amor 🌸</p>
 </footer>
 
 </body>
