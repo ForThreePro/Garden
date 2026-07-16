@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>THE GARDEN OF SAKURA 🌸</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600;700&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: #000;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+  background-image: 
+    radial-gradient(circle at 20% 50%, rgba(255,142,207,0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(155,225,93,0.1) 0%, transparent 50%);
+}
+
+header {
+  text-align: center;
+  padding: 100px 20px 60px;
+  position: relative;
+}
+
+.logo {
+  font-family: 'Pacifico', cursive;
+  font-size: 4rem;
+  background: linear-gradient(180deg, #FFB6E6 0%, #FF8ECF 50%, #E85CA5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 30px rgba(255,142,207,0.5);
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from { filter: drop-shadow(0 0 10px #FF8ECF); }
+  to { filter: drop-shadow(0 0 30px #FF8ECF); }
+}
+
+.desc {
+  max-width: 700px;
+  margin: 30px auto;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #FFB6E6;
+}
+
+.sakura { position: fixed; top: -10%; color: #FFB6E6; animation: fall 10s linear infinite; z-index: -1; }
+@keyframes fall { to { transform: translateY(110vh) rotate(360deg); opacity: 0; } }
+
+.btn {
+  display: inline-block;
+  padding: 16px 45px;
+  background: linear-gradient(90deg, #FF8ECF, #9BE15D);
+  color: #000;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 700;
+  margin: 10px;
+  transition: 0.3s;
+  box-shadow: 0 5px 20px rgba(255,142,207,0.4);
+  font-size: 1.1rem;
+}
+.btn:hover { transform: scale(1.08); box-shadow: 0 10px 40px rgba(255,142,207,0.6); }
+
+.container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
+
+.card {
+  background: rgba(255,142,207,0.05);
+  border: 2px solid rgba(255,142,207,0.3);
+  border-radius: 25px;
+  padding: 40px;
+  margin: 30px 0;
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+  text-align: center;
+}
+.card:hover { border-color: #FF8ECF; box-shadow: 0 0 30px rgba(255,142,207,0.4); transform: translateY(-5px); }
+
+.lider-nombre {
+  font-size: 2rem;
+  color: #FF8ECF;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.lider-cargo {
+  color: #9BE15D;
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+
+.socials a {
+  display: inline-block;
+  margin: 10px 15px;
+  padding: 12px 25px;
+  background: rgba(155,225,93,0.1);
+  border: 1px solid #9BE15D;
+  border-radius: 15px;
+  color: #9BE15D;
+  text-decoration: none;
+  transition: 0.3s;
+  font-weight: 600;
+}
+.socials a:hover { background: #9BE15D; color: #000; transform: translateY(-3px); }
+
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  border-top: 1px solid rgba(255,142,207,0.2);
+  color: #9BE15D;
+}
+</style>
+</head>
+<body>
+
+<script>
+for(let i=0; i<20; i++){
+  let sakura = document.createElement('div');
+  sakura.className = 'sakura';
+  sakura.innerHTML = '🌸';
+  sakura.style.left = Math.random()*100 + '%';
+  sakura.style.animationDelay = Math.random()*5 + 's';
+  sakura.style.fontSize = Math.random()*20 + 15 + 'px';
+  document.body.appendChild(sakura);
+}
+</script>
+
+<header>
+  <h1 class="logo">THE GARDEN OF SAKURA</h1>
+  <p class="desc">
+    Más que un grupo, somos un jardín en constante florecimiento, 
+    donde la amistad, el respeto y la alegría nos unen. 
+    Bienvenida a <b>THE GARDEN OF SAKURA</b>, un lugar donde cada flor 
+    tiene su propio brillo y juntas creamos un paisaje inolvidable. 🌸
+  </p>
+  <div>
+    <a href="https://chat.whatsapp.com/HT0YyZbLEj2LWOgIhwoP72?s=cl&p=a&ilr=0" target="_blank" class="btn">🌸 Unirme al Grupo</a>
+  </div>
+</header>
+
+<div class="container">
+  
+  <div class="card">
+    <h2 style="color:#FF8ECF; margin-bottom:20px; font-size:2rem;">👑 LIDER DEL CLAN</h2>
+    <div class="lider-nombre">SAKURITA</div>
+    <div class="lider-cargo">— Encargada principal del clan —</div>
+    <div class="socials">
+      <a href="https://www.tiktok.com/@ikio_16?_r=1&_t=ZS-984FBnojtou" target="_blank">📱 TikTok</a>
+      <a href="https://www.instagram.com/pinklove_pp?igsh=dXBvaWk0OWIzeTFn&utm_source=qr" target="_blank">📸 Instagram</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2 style="color:#9BE15D; margin-bottom:20px;">✨ Nuestros Valores</h2>
+    <p style="font-size:1.1rem;">
+      🌸 <b>Amistad</b> | 💖 <b>Respeto</b> | 😊 <b>Alegría</b><br>
+      Juntas hacemos florecer este jardín
+    </p>
+  </div>
+
+</div>
+
+<footer>
+  <p>© 2026 THE GARDEN OF SAKURA | Cada pétalo importa 🌸</p>
+</footer>
+
+</body>
+</html>
