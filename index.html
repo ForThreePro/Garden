@@ -19,11 +19,9 @@ body {
   overflow-x: hidden;
 }
 
-/* HEADER SUAVE */
 header {
   text-align: center;
   padding: 120px 20px 80px;
-  position: relative;
 }
 
 .logo {
@@ -46,10 +44,8 @@ header {
   font-size: 1.15rem;
   line-height: 2;
   color: #8A6A7A;
-  font-weight: 400;
 }
 
-/* PETALOS DELICADOS */
 .sakura { 
   position: fixed; 
   top: -10%; 
@@ -63,7 +59,6 @@ header {
   to { transform: translateY(110vh) rotate(720deg); opacity: 0; } 
 }
 
-/* BOTON DELICADO */
 .btn {
   display: inline-block;
   padding: 16px 45px;
@@ -79,7 +74,7 @@ header {
   letter-spacing: 1px;
 }
 .btn:hover { 
-  background: #FFC0E5;
+  background: #E85CA5;
   color: #FFFFFF;
   transform: translateY(-4px);
   box-shadow: 0 12px 30px rgba(232,92,165,0.3);
@@ -87,7 +82,6 @@ header {
 
 .container { max-width: 900px; margin: 0 auto; padding: 50px 20px; }
 
-/* CARDS BLANCAS DELICADAS */
 .card {
   background: rgba(255,255,255,0.8);
   border: 1px solid rgba(255,192,229,0.5);
@@ -111,6 +105,32 @@ header {
   margin-bottom: 25px;
 }
 
+/* LISTA DE REQUISITOS */
+.requisitos {
+  list-style: none;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+}
+.requisitos li {
+  background: rgba(255,192,229,0.15);
+  padding: 15px 25px;
+  margin: 12px 0;
+  border-radius: 20px;
+  border-left: 4px solid #E85CA5;
+  font-size: 1.05rem;
+  color: #5A3E4C;
+  transition: 0.3s;
+}
+.requisitos li:hover {
+  background: rgba(232,92,165,0.2);
+  transform: translateX(5px);
+}
+.requisitos li::before {
+  content: '🌸';
+  margin-right: 12px;
+}
+
 .lider-nombre {
   font-size: 2.2rem;
   color: #E85CA5;
@@ -125,7 +145,6 @@ header {
   font-style: italic;
 }
 
-/* BOTONES SOCIALES SUAVES */
 .socials a {
   display: inline-block;
   margin: 12px 18px;
@@ -190,6 +209,19 @@ for(let i=0; i<18; i++){
 </header>
 
 <div class="container">
+
+  <div class="card">
+    <h2 class="titulo-seccion">Requisitos para Unirte</h2>
+    <ul class="requisitos">
+      <li>Ser mujer</li>
+      <li>+15 años</li>
+      <li>Nivel +40</li>
+      <li>Región EE.UU</li>
+      <li>No homofóbicas</li>
+      <li>No inactivas</li>
+      <li>No sensibles</li>
+    </ul>
+  </div>
   
   <div class="card">
     <h2 class="titulo-seccion">Líder del Clan</h2>
