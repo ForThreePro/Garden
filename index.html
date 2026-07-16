@@ -3,22 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>THE GARDEN OF SAKURA 🌸</title>
+<title>THE GARDEN OF SAKURA 🌸💖</title>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;600;700&display=swap');
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
-  background: #000;
+  background: linear-gradient(135deg, #1a0015 0%, #330026 50%, #1a0015 100%);
   color: #fff;
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
   background-image: 
-    radial-gradient(circle at 20% 50%, rgba(255,142,207,0.1) 0%, transparent 50%),
-    radial-gradient(circle at 80% 80%, rgba(155,225,93,0.1) 0%, transparent 50%);
+    radial-gradient(circle at 20% 50%, rgba(255,142,207,0.2) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(255,182,230,0.15) 0%, transparent 50%);
 }
 
+/* HEADER */
 header {
   text-align: center;
   padding: 100px 20px 60px;
@@ -26,104 +27,132 @@ header {
 }
 
 .logo {
-  font-family: 'Pacifico', cursive;
-  font-size: 4rem;
-  background: linear-gradient(180deg, #FFB6E6 0%, #FF8ECF 50%, #E85CA5 100%);
+  font-family: 'Dancing Script', cursive;
+  font-size: 4.5rem;
+  background: linear-gradient(180deg, #FFB6E6 0%, #FF8ECF 40%, #FF69B4 70%, #E85CA5 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: 0 0 30px rgba(255,142,207,0.5);
+  text-shadow: 0 0 40px rgba(255,142,207,0.7);
   animation: glow 2s ease-in-out infinite alternate;
 }
 
 @keyframes glow {
-  from { filter: drop-shadow(0 0 10px #FF8ECF); }
-  to { filter: drop-shadow(0 0 30px #FF8ECF); }
+  from { filter: drop-shadow(0 0 15px #FF69B4); }
+  to { filter: drop-shadow(0 0 40px #FF8ECF); }
 }
 
 .desc {
   max-width: 700px;
   margin: 30px auto;
-  font-size: 1.1rem;
-  line-height: 1.8;
-  color: #FFB6E6;
+  font-size: 1.2rem;
+  line-height: 1.9;
+  color: #FFD6F0;
+  font-weight: 400;
 }
 
-.sakura { position: fixed; top: -10%; color: #FFB6E6; animation: fall 10s linear infinite; z-index: -1; }
+/* PETALOS ROSAS */
+.sakura { position: fixed; top: -10%; color: #FFB6E6; animation: fall 10s linear infinite; z-index: -1; text-shadow: 0 0 10px #FF69B4; }
 @keyframes fall { to { transform: translateY(110vh) rotate(360deg); opacity: 0; } }
 
+/* BOTON ROSA */
 .btn {
   display: inline-block;
-  padding: 16px 45px;
-  background: linear-gradient(90deg, #FF8ECF, #9BE15D);
-  color: #000;
+  padding: 18px 50px;
+  background: linear-gradient(90deg, #FF69B4, #FF8ECF, #FFB6E6);
+  color: #1a0015;
   text-decoration: none;
   border-radius: 50px;
   font-weight: 700;
   margin: 10px;
   transition: 0.3s;
-  box-shadow: 0 5px 20px rgba(255,142,207,0.4);
+  box-shadow: 0 8px 25px rgba(255,105,180,0.5);
   font-size: 1.1rem;
+  border: 2px solid #FFB6E6;
 }
-.btn:hover { transform: scale(1.08); box-shadow: 0 10px 40px rgba(255,142,207,0.6); }
+.btn:hover { transform: scale(1.1); box-shadow: 0 15px 50px rgba(255,105,180,0.8); }
 
 .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
 
+/* CARDS ROSAS */
 .card {
-  background: rgba(255,142,207,0.05);
-  border: 2px solid rgba(255,142,207,0.3);
-  border-radius: 25px;
-  padding: 40px;
+  background: linear-gradient(135deg, rgba(255,105,180,0.1), rgba(255,182,230,0.08));
+  border: 2px solid rgba(255,142,207,0.4);
+  border-radius: 30px;
+  padding: 45px;
   margin: 30px 0;
-  backdrop-filter: blur(10px);
-  transition: 0.3s;
+  backdrop-filter: blur(15px);
+  transition: 0.4s;
   text-align: center;
+  box-shadow: 0 10px 30px rgba(255,105,180,0.2);
 }
-.card:hover { border-color: #FF8ECF; box-shadow: 0 0 30px rgba(255,142,207,0.4); transform: translateY(-5px); }
+.card:hover { 
+  border-color: #FF69B4; 
+  box-shadow: 0 0 40px rgba(255,105,180,0.5); 
+  transform: translateY(-8px);
+}
 
 .lider-nombre {
-  font-size: 2rem;
-  color: #FF8ECF;
+  font-size: 2.5rem;
+  background: linear-gradient(90deg, #FF69B4, #FF8ECF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin-bottom: 10px;
   font-weight: 700;
+  font-family: 'Dancing Script', cursive;
 }
 .lider-cargo {
-  color: #9BE15D;
-  font-size: 1.1rem;
+  color: #FFB6E6;
+  font-size: 1.2rem;
   margin-bottom: 25px;
+  font-style: italic;
 }
 
+/* BOTONES SOCIALES ROSAS */
 .socials a {
   display: inline-block;
   margin: 10px 15px;
-  padding: 12px 25px;
-  background: rgba(155,225,93,0.1);
-  border: 1px solid #9BE15D;
-  border-radius: 15px;
-  color: #9BE15D;
+  padding: 14px 30px;
+  background: linear-gradient(90deg, rgba(255,105,180,0.2), rgba(255,182,230,0.2));
+  border: 2px solid #FF69B4;
+  border-radius: 20px;
+  color: #FFD6F0;
   text-decoration: none;
   transition: 0.3s;
   font-weight: 600;
+  box-shadow: 0 5px 15px rgba(255,105,180,0.3);
 }
-.socials a:hover { background: #9BE15D; color: #000; transform: translateY(-3px); }
+.socials a:hover { 
+  background: linear-gradient(90deg, #FF69B4, #FF8ECF); 
+  color: #1a0015; 
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(255,105,180,0.6);
+}
 
 footer {
   text-align: center;
   padding: 40px 20px;
-  border-top: 1px solid rgba(255,142,207,0.2);
-  color: #9BE15D;
+  border-top: 2px solid rgba(255,142,207,0.3);
+  color: #FFB6E6;
+  background: rgba(255,105,180,0.05);
+}
+
+.sparkle::before {
+  content: '✨';
+  margin: 0 10px;
+  color: #FFB6E6;
 }
 </style>
 </head>
 <body>
 
 <script>
-for(let i=0; i<20; i++){
+for(let i=0; i<25; i++){
   let sakura = document.createElement('div');
   sakura.className = 'sakura';
   sakura.innerHTML = '🌸';
   sakura.style.left = Math.random()*100 + '%';
   sakura.style.animationDelay = Math.random()*5 + 's';
-  sakura.style.fontSize = Math.random()*20 + 15 + 'px';
+  sakura.style.fontSize = Math.random()*25 + 15 + 'px';
   document.body.appendChild(sakura);
 }
 </script>
@@ -131,20 +160,22 @@ for(let i=0; i<20; i++){
 <header>
   <h1 class="logo">THE GARDEN OF SAKURA</h1>
   <p class="desc">
+    <span class="sparkle"></span>
     Más que un grupo, somos un jardín en constante florecimiento, 
     donde la amistad, el respeto y la alegría nos unen. 
     Bienvenida a <b>THE GARDEN OF SAKURA</b>, un lugar donde cada flor 
-    tiene su propio brillo y juntas creamos un paisaje inolvidable. 🌸
+    tiene su propio brillo y juntas creamos un paisaje inolvidable. 
+    <span class="sparkle"></span>🌸
   </p>
   <div>
-    <a href="https://chat.whatsapp.com/HT0YyZbLEj2LWOgIhwoP72?s=cl&p=a&ilr=0" target="_blank" class="btn">🌸 Unirme al Grupo</a>
+    <a href="https://chat.whatsapp.com/HT0YyZbLEj2LWOgIhwoP72?s=cl&p=a&ilr=0" target="_blank" class="btn">💖 Unirme al Jardín</a>
   </div>
 </header>
 
 <div class="container">
   
   <div class="card">
-    <h2 style="color:#FF8ECF; margin-bottom:20px; font-size:2rem;">👑 LIDER DEL CLAN</h2>
+    <h2 style="background: linear-gradient(90deg, #FF69B4, #FF8ECF); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom:20px; font-size:2.2rem;">👑 LIDER DEL CLAN 👑</h2>
     <div class="lider-nombre">SAKURITA</div>
     <div class="lider-cargo">— Encargada principal del clan —</div>
     <div class="socials">
@@ -154,17 +185,17 @@ for(let i=0; i<20; i++){
   </div>
 
   <div class="card">
-    <h2 style="color:#9BE15D; margin-bottom:20px;">✨ Nuestros Valores</h2>
-    <p style="font-size:1.1rem;">
-      🌸 <b>Amistad</b> | 💖 <b>Respeto</b> | 😊 <b>Alegría</b><br>
-      Juntas hacemos florecer este jardín
+    <h2 style="background: linear-gradient(90deg, #FF69B4, #FF8ECF); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom:20px; font-size:2rem;">✨ Nuestros Valores ✨</h2>
+    <p style="font-size:1.2rem; color:#FFD6F0;">
+      🌸 <b>Amistad</b> | 💖 <b>Respeto</b> | 😊 <b>Alegría</b><br><br>
+      Juntas hacemos florecer este jardín mágico
     </p>
   </div>
 
 </div>
 
 <footer>
-  <p>© 2026 THE GARDEN OF SAKURA | Cada pétalo importa 🌸</p>
+  <p>© 2026 THE GARDEN OF SAKURA | Hecho con amor y mucho rosa 💗🌸</p>
 </footer>
 
 </body>
